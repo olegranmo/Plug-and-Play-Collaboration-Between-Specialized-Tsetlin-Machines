@@ -6,8 +6,6 @@ import cv2
 from tmu.preprocessing.standard_binarizer.binarizer import StandardBinarizer
 from time import time
 
-_LOGGER = logging.getLogger(__name__)
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--num_clauses", default=8000, type=int)
