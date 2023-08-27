@@ -46,13 +46,13 @@ if __name__ == "__main__":
     Y_test=Y_test.reshape(Y_test.shape[0])
     
     fd = hog.compute(X_train_org[0])
-    X_train = np.empty((X_train_org.shape[0], fd.shape[0]), dtype=np.uint32)#dtype=np.float32)
+    X_train = np.empty((X_train_org.shape[0], fd.shape[0]), dtype=np.uint32)
     for i in range(X_train_org.shape[0]):
         fd = hog.compute(X_train_org[i]) 
         X_train[i] = fd >= 0.1
 
     fd = hog.compute(X_test_org[0])
-    X_test = np.empty((X_test_org.shape[0], fd.shape[0]), dtype=np.uint32)#, dtype=np.float32)
+    X_test = np.empty((X_test_org.shape[0], fd.shape[0]), dtype=np.uint32)
     for i in range(X_test_org.shape[0]):
         fd = hog.compute(X_test_org[i])
         X_test[i] = fd >= 0.1
