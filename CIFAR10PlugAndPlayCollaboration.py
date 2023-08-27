@@ -123,15 +123,19 @@ tm_thermometer_4 = TMClassifier(
 for epoch in range(100):
     tm_hog.fit(X_train_hog, Y_train)
     Y_test_hog, Y_test_scores_hog = tm_hog.predict(X_test_hog, return_class_sums=True)
+    print((Y_test_hog == Y_test).mean())
 
     tm_threshold.fit(X_train_threshold, Y_train)
     Y_test_threshold, Y_test_scores_threshold = tm_threshold.predict(X_test_threshold, return_class_sums=True)
+    print((Y_test_threshold == Y_test).mean())
 
     tm_thermometer_3.fit(X_train_thermometer, Y_train)
     Y_test_thermometer_3, Y_test_scores_thermometer_3 = tm_thermometer_3.predict(X_test_thermometer, return_class_sums=True)
+    print((Y_test_thermometer_3 == Y_test).mean())
 
     tm_thermometer_4.fit(X_train_thermometer, Y_train)
     Y_test_thermometer_4, Y_test_scores_thermometer_4 = tm_thermometer_4.predict(X_test_thermometer, return_class_sums=True)
+    print((Y_test_thermometer_4 == Y_test).mean())
 
     votes = np.zeros(Y_test_scores_hog.shape, dtype=np.float32)
     for i in range(Y_test.shape[0]):
@@ -141,9 +145,5 @@ for epoch in range(100):
         votes[i] += 1.0*Y_test_scores_hog[i]/(np.max(Y_test_scores_hog) - np.min(Y_test_scores_hog))
     Y_test_team = votes.argmax(axis=1)
 
-    print((Y_test_hog == Y_test).mean())
-    print((Y_test_threshold == Y_test).mean())
-    print((Y_test_thermometer_3 == Y_test).mean())
-    print((Y_test_thermometer_4 == Y_test).mean())
     print((Y_test_team == Y_test).mean())
     print()
