@@ -77,7 +77,7 @@ if __name__ == "__main__":
         Y_test_predicted, Y_test_scores = tm.predict(X_test, return_class_sums=True)
         stop_testing = time()
 
-        result_test = (Y_test_scores.argmax(axis=1) == Y_test).mean()
+        result_test = 100*(Y_test_scores.argmax(axis=1) == Y_test).mean()
 
         print("#%d Accuracy: %.2f%% Training: %.2fs Testing: %.2fs" % (epoch+1, result_test, stop_training-start_training, stop_testing-start_testing))
         
