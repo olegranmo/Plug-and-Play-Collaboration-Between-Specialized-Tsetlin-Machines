@@ -1,12 +1,8 @@
-import logging
 import argparse
 from tmu.models.classification.vanilla_classifier import TMClassifier
-from tmu.tools import BenchmarkTimer
-from tmu.util.cuda_profiler import CudaProfiler
 import numpy as np
 from keras.datasets import cifar10
 import cv2
-from skimage.feature import hog
 from tmu.preprocessing.standard_binarizer.binarizer import StandardBinarizer
 
 patch_size = 0
@@ -28,8 +24,6 @@ gammaCorrection = True
 nlevels = 64
 signedGradient = True
 hog = cv2.HOGDescriptor((winSize,winSize),(blockSize, blockSize),(blockStride,blockStride),(cellSize,cellSize),nbins,derivAperture, winSigma,histogramNormType,L2HysThreshold,gammaCorrection,nlevels,signedGradient)
-
-_LOGGER = logging.getLogger(__name__)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -78,20 +72,9 @@ if __name__ == "__main__":
 
         Y_test_predicted, Y_test_scores = tm.predict(X_test, return_class_sums=True)
 
-        max_score = Y_test_scores.max(axis=1)
-        max_score_index = Y_test_scores.argmax(axis=1)
-        sorted_index = np.argsort(-1*max_score)
+        result_test == (Y_test_scores.argmax(axis=1) == Y_test).mean()
 
-        correct = 0.0
-        total = 0.0
-        for i in sorted_index:
-            if max_score_index[i] == Y_test[i]:
-                correct += 1
-            total += 1
-
-            if total % 100 == 0:
-                print("%d %.2f %.2f" % (max_score[i], total/sorted_index.shape[0], correct/total))
-
+        print("Epoch %d - Accuracy %.2f" % (epoch+1, result_test))
         np.savetxt("CIFAR10HistogramOfGradients_%d_%d_%.1f_%d_%d_%d.txt" % (epoch, args.num_clauses, args.T, args.s, patch_size, args.max_included_literals), Y_test_scores, delimiter=',') 
 
 
