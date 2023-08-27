@@ -4,6 +4,7 @@ import numpy as np
 from keras.datasets import cifar10
 import cv2
 from tmu.preprocessing.standard_binarizer.binarizer import StandardBinarizer
+from time import time
 
 patch_size = 0
 
