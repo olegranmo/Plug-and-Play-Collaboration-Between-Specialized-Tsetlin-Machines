@@ -6,11 +6,8 @@ from tmu.util.cuda_profiler import CudaProfiler
 import numpy as np
 from keras.datasets import cifar10
 import cv2
-import matplotlib.pyplot as plt
 from skimage.feature import hog
 from tmu.preprocessing.standard_binarizer.binarizer import StandardBinarizer
-
-classes = ['airplane','automobile','bird','cat','deer','dog','frog','horse','ship','truck']
 
 patch_size = 0
 
@@ -37,14 +34,13 @@ _LOGGER = logging.getLogger(__name__)
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--num_clauses", default=2000, type=int)
-    parser.add_argument("--T", default=5000//100, type=int)
+    parser.add_argument("--T", default=50, type=int)
     parser.add_argument("--s", default=10.0, type=float)
     parser.add_argument("--max_included_literals", default=32, type=int)
-    parser.add_argument("--device", default="CPU", type=str)
+    parser.add_argument("--device", default="GPU", type=str)
     parser.add_argument("--weighted_clauses", default=False, type=bool)
-    parser.add_argument("--epochs", default=60, type=int)
+    parser.add_argument("--epochs", default=100, type=int)
     parser.add_argument("--type_i_ii_ratio", default=1.0, type=float)
-    parser.add_argument("--rejection", default=-10000, type=int)
 
     args = parser.parse_args()
 
@@ -82,7 +78,7 @@ if __name__ == "__main__":
     for epoch in range(args.epochs):
         tm.fit(X_train, Y_train)
 
-        Y_test_scores = tm.predict(X_test, return_class_sums=True)
+        Y_test_predicted, Y_test_scores = tm.predict(X_test, return_class_sums=True)
 
         max_score = Y_test_scores.max(axis=1)
         max_score_index = Y_test_scores.argmax(axis=1)
