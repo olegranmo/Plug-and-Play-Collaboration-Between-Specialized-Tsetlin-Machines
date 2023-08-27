@@ -1,6 +1,8 @@
 import numpy as np
 from keras.datasets import cifar10
 import cv2
+from tmu.models.classification.vanilla_classifier import TMClassifier
+from tmu.preprocessing.standard_binarizer.binarizer import StandardBinarizer
 
 device = "GPU"
 max_included_literals = 32
