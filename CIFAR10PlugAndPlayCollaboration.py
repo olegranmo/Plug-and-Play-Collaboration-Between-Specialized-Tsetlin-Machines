@@ -7,14 +7,11 @@ from tmu.preprocessing.standard_binarizer.binarizer import StandardBinarizer
 device = "GPU"
 max_included_literals = 32
 resolution = 8
+factor = 1
 
 (X_train_org, Y_train), (X_test_org, Y_test) = cifar10.load_data()
-
-X_train_org = X_train_org[:500]
-X_test_org = X_test_org[:500]
-
-Y_train=Y_train.reshape(Y_train.shape[0])[:500]
-Y_test=Y_test.reshape(Y_test.shape[0])[:500]
+Y_train=Y_train.reshape(Y_train.shape[0])
+Y_test=Y_test.reshape(Y_test.shape[0])
 
 ##################################
 ##### Histogram of Gradients #####
@@ -51,8 +48,8 @@ for i in range(X_test_org.shape[0]):
     X_test_hog[i] = fd >= 0.1
 
 tm_hog = TMClassifier(
-    number_of_clauses=2000,
-    T=50,
+    number_of_clauses=2000*factor,
+    T=50*factor,
     s=10.0,
     max_included_literals=max_included_literals,
     platform=device,
@@ -75,8 +72,8 @@ for i in range(X_test_threshold.shape[0]):
         X_test_threshold[i,:,:,j] = cv2.adaptiveThreshold(X_test_org[i,:,:,j], 1, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)#cv2.adaptiveThreshold(X_test[i,:,:,j], 1, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 5, 5)
 
 tm_threshold = TMClassifier(
-    number_of_clauses=2000,
-    T=500,
+    number_of_clauses=2000*factor,
+    T=500*factor,
     s=10.0,
     max_included_literals=max_included_literals,
     platform=device,
@@ -100,8 +97,8 @@ X_train_thermometer = X_train_thermometer.reshape((X_train_org.shape[0], X_train
 X_test_thermometer = X_test_thermometer.reshape((X_test_org.shape[0], X_test_org.shape[1], X_test_org.shape[2], 3*resolution))
 
 tm_thermometer_3 = TMClassifier(
-    number_of_clauses=2000,
-    T=1500,
+    number_of_clauses=2000*factor,
+    T=1500*factor,
     s=2.5,
     max_included_literals=max_included_literals,
     platform=device,
@@ -110,8 +107,8 @@ tm_thermometer_3 = TMClassifier(
 )
 
 tm_thermometer_4 = TMClassifier(
-    number_of_clauses=2000,
-    T=1500,
+    number_of_clauses=2000*factor,
+    T=1500*factor,
     s=2.5,
     max_included_literals=max_included_literals,
     platform=device,
@@ -149,3 +146,4 @@ for epoch in range(100):
     print((Y_test_thermometer_3 == Y_test).mean())
     print((Y_test_thermometer_4 == Y_test).mean())
     print((Y_test_team == Y_test).mean())
+    print()
