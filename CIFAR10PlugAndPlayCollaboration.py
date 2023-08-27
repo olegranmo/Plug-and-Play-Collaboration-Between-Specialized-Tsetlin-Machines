@@ -82,7 +82,7 @@ tm_threshold = TMClassifier(
 )
 
 ##############################
-##### Color thermometer #####
+##### Color Thermometers #####
 ##############################
 
 X_train_thermometer = np.empty((X_train_org.shape[0], X_train_org.shape[1], X_train_org.shape[2], X_train_org.shape[3], resolution), dtype=np.uint8)
@@ -137,6 +137,8 @@ for epoch in range(100):
     Y_test_thermometer_4, Y_test_scores_thermometer_4 = tm_thermometer_4.predict(X_test_thermometer, return_class_sums=True)
     print((Y_test_thermometer_4 == Y_test).mean())
 
+    ##### Team Decision #####
+    
     votes = np.zeros(Y_test_scores_hog.shape, dtype=np.float32)
     for i in range(Y_test.shape[0]):
         votes[i] += 1.0*Y_test_scores_threshold[i]/(np.max(Y_test_scores_threshold) - np.min(Y_test_scores_threshold))
