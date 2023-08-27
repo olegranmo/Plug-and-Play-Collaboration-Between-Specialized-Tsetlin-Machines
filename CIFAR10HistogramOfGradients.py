@@ -68,13 +68,17 @@ if __name__ == "__main__":
     )
 
     for epoch in range(args.epochs):
+        start_training = time()
         tm.fit(X_train, Y_train)
+        stop_training = time()
 
+        start_testing = time()
         Y_test_predicted, Y_test_scores = tm.predict(X_test, return_class_sums=True)
+        stop_testing = time()
 
         result_test = (Y_test_scores.argmax(axis=1) == Y_test).mean()
 
-        print("Epoch %d - Accuracy %.2f" % (epoch+1, result_test))
+        print("#%d Accuracy: %.2f%% Training: %.2fs Testing: %.2fs" % (i+1, result, stop_training-start_training, stop_testing-start_testing))
         
         np.savetxt("CIFAR10HistogramOfGradients_%d_%d_%.1f_%d_%d_%d.txt" % (epoch, args.num_clauses, args.T, args.s, patch_size, args.max_included_literals), Y_test_scores, delimiter=',') 
 
