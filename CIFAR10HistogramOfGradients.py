@@ -52,8 +52,6 @@ if __name__ == "__main__":
     Y_test=Y_test.reshape(Y_test.shape[0])
     
     fd = hog.compute(X_train_org[0])
-    print(fd.shape)
-    print(fd)
     X_train = np.empty((X_train_org.shape[0], fd.shape[0]), dtype=np.uint32)#dtype=np.float32)
     for i in range(X_train_org.shape[0]):
         fd = hog.compute(X_train_org[i]) 
