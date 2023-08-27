@@ -72,9 +72,10 @@ if __name__ == "__main__":
 
         Y_test_predicted, Y_test_scores = tm.predict(X_test, return_class_sums=True)
 
-        result_test == (Y_test_scores.argmax(axis=1) == Y_test).mean()
+        result_test = (Y_test_scores.argmax(axis=1) == Y_test).mean()
 
         print("Epoch %d - Accuracy %.2f" % (epoch+1, result_test))
+        
         np.savetxt("CIFAR10HistogramOfGradients_%d_%d_%.1f_%d_%d_%d.txt" % (epoch, args.num_clauses, args.T, args.s, patch_size, args.max_included_literals), Y_test_scores, delimiter=',') 
 
 
