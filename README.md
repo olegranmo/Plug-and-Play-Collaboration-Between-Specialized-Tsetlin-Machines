@@ -10,7 +10,7 @@ This project introduces plug-and-play collaboration between Tsetlin machines (TM
   * Color Thermometers w/3x3 convolution;
   * Color Thermometers w/4x4 convolution.
     
-Working as a team increases accuracy on Fashion-MNIST by two percentage points, CIFAR-10 by twelve points, and CIFAR-100 by nine points, yielding new state-of-the-art results for TMs across the datasets.
+Working as a team increases accuracy on Fashion-MNIST by two percentage points, CIFAR-10 by twelve points, and CIFAR-100 by nine points, yielding new state-of-the-art results for TMs.
 
 ## Architecture
 
