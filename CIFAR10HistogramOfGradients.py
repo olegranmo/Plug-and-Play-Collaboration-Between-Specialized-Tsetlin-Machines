@@ -81,7 +81,7 @@ if __name__ == "__main__":
 
         print("#%d Accuracy: %.2f%% Training: %.2fs Testing: %.2fs" % (epoch+1, result_test, stop_training-start_training, stop_testing-start_testing))
         
-        np.savetxt("CIFAR10HistogramOfGradients_%d_%d_%.1f_%d_%d_%d.txt" % (epoch+1, args.num_clauses, args.T, args.s, patch_size, args.max_included_literals), Y_test_scores, delimiter=',') 
+        np.savetxt("CIFAR10HistogramOfGradients_%d_%d_%d_%.2f_%d_%d_%d.txt" % (epoch+1, args.num_clauses, args.T, args.s, patch_size, args.max_included_literals, args.weighted_clauses), Y_test_scores, delimiter=',') 
 
 
 
