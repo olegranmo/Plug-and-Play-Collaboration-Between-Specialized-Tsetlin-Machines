@@ -3,7 +3,7 @@
 This project introduces plug-and-play teaming of specialized Tsetlin machines (TMs), fostering collaboration. 
 * The collaboration relies on a TM's ability to specialize during learning and to assess its competence during inference.
 * When teaming up, the most confident TMs step in and make the decisions, relieving the uncertain ones. In this manner, the team becomes more competent than its individual members, benefitting from their specializations.
-* The project implements four TM specializations as demonstration:
+* The project implements four TM specializations as a demonstration:
   * Histogram of Gradients;
   * Adaptive Thresholding w/10x10 convolution;
   * Color Thermometers w/3x3 convolution;
