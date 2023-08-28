@@ -6,7 +6,7 @@ This project introduces plug-and-play teaming of specialized Tsetlin machines (T
 * As a demonstration, the project implements four TM specializations:
   * Histogram of Gradients;
   * Adaptive Thresholding w/10x10 convolution;
-  * Color Thermometers w/3x3 convolution; and
+  * Color Thermometers w/3x3 convolution;
   * Color Thermometers w/4x4 convolution.
 * A team of four TMs increases accuracy on Fashion-MNIST by two percentage points, accuracy on CIFAR-10 by , and nine points for CIFAR-100.
 
