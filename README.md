@@ -18,7 +18,7 @@ The plug-and-play architecture is visualized below.
 <p align="center">
   <img width="60%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/TeamOfSpecialists.png">
 </p>
-As seen, each member TM outputs its class sum per class, with the class sum signifying confidence. In the ensuing normalization step, the class sums of each TM are divided by the difference between the TM's largest and smallest class sum in the dataset.
+Each member TM first outputs its class sum per class, with the class sum signifying confidence. In the ensuing normalization step, the class sums of each TM are divided by the difference between the TM's largest and smallest class sum in the dataset.
 
 ## Results
 
