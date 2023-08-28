@@ -13,6 +13,8 @@ This project introduces plug-and-play teaming of specialized Tsetlin machines (T
 The above teaming gives the new state-of-the-art performance for TMs across Fashion-MNIST, CIFAR-10, and CIFAR-100, increasing accuracy on Fashion-MNIST by two percentage points, CIFAR-10 by twelve points, and CIFAR-100 by nine points.
 
 ## Architecture
+
+The plug-and-play architecture is visualized below.
 <p align="center">
   <img width="60%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/TeamOfSpecialists.png">
 </p>
