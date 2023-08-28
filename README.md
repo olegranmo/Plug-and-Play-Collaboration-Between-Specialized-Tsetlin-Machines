@@ -3,7 +3,7 @@
 This project introduces plug-and-play collaboration between Tsetlin machines (TMs). 
 * The collaboration relies on a TM's ability to specialize during learning and to assess its competence during inference.
 * When teaming up, the most confident TMs step in and make the decisions, relieving the uncertain ones. In this manner, the team becomes more competent than its members, benefitting from their specializations.
-* The members can be combined in any manner, at any time, without any form of fine-tuning (plug-and-play).
+* The members can be combined in any manner, at any time, without any fine-tuning (plug-and-play).
 * The project implements four TM specializations as a demonstration:
   * Histogram of Gradients;
   * Adaptive Thresholding w/10x10 convolution;
@@ -24,7 +24,7 @@ Each member TM first outputs its class sum per class, with the class sum signify
 <img src="http://latex.codecogs.com/svg.latex?\hat{y} = u\left(\sum_{j=1}^{n/2} C_j^+(X) - \sum_{j=1}^{n/2} C_j^-(X)\right)" border="0" valign="middle"/>.
 </p>
 
-In the ensuing normalization step, the TM's class sums are divided by the difference between the largest and smallest class sums. The normalized class sums, in turn, are added together, forming the class sums of the team as a whole. The largest value of these decides the class output in the final step.
+In the ensuing normalization step, the TM's class sums are divided by the difference between the largest and smallest class sums. The normalized class sums, in turn, are added together, forming the class sums of the team as a whole. The maximum value of these decides the class output in the final step.
 
 ## Results
 
