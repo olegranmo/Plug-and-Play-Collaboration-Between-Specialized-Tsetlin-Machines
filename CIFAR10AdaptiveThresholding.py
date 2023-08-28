@@ -15,7 +15,6 @@ if __name__ == "__main__":
     parser.add_argument("--device", default="GPU", type=str)
     parser.add_argument("--weighted_clauses", default=True, type=bool)
     parser.add_argument("--epochs", default=100, type=int)
-    parser.add_argument("--type_i_ii_ratio", default=1.0, type=float)
     parser.add_argument("--patch_size", default=10, type=int)
 
     args = parser.parse_args()
@@ -30,11 +29,11 @@ if __name__ == "__main__":
 
     for i in range(X_train.shape[0]):
             for j in range(X_train.shape[3]):
-                    X_train[i,:,:,j] = cv2.adaptiveThreshold(X_train_org[i,:,:,j], 1, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2) #cv2.adaptiveThreshold(X_train[i,:,:,j], 1, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 5, 5)
+                    X_train[i,:,:,j] = cv2.adaptiveThreshold(X_train_org[i,:,:,j], 1, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
 
     for i in range(X_test.shape[0]):
             for j in range(X_test.shape[3]):
-                X_test[i,:,:,j] = cv2.adaptiveThreshold(X_test_org[i,:,:,j], 1, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)#cv2.adaptiveThreshold(X_test[i,:,:,j], 1, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 5, 5)
+                X_test[i,:,:,j] = cv2.adaptiveThreshold(X_test_org[i,:,:,j], 1, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
 
     tm = TMClassifier(
         number_of_clauses=args.num_clauses,

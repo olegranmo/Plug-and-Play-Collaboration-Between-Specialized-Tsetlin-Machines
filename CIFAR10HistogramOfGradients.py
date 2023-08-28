@@ -35,7 +35,6 @@ if __name__ == "__main__":
     parser.add_argument("--device", default="GPU", type=str)
     parser.add_argument("--weighted_clauses", default=False, type=bool)
     parser.add_argument("--epochs", default=100, type=int)
-    parser.add_argument("--type_i_ii_ratio", default=1.0, type=float)
 
     args = parser.parse_args()
 
