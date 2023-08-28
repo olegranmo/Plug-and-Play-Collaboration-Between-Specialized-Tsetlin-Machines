@@ -8,7 +8,7 @@ This project introduces plug-and-play teaming of specialized Tsetlin machines (T
   * Adaptive Thresholding w/10x10 convolution;
   * Color Thermometers w/3x3 convolution;
   * Color Thermometers w/4x4 convolution.
-* The members can be combined in any manner, at any time, without any form of fine-tuning, making the approach plug-and-play.
+* The members can be combined in any manner, at any time, without any form of fine-tuning, approaching plug-and-play.
 
 The above teaming gives the new state-of-the-art performance for TMs across Fashion-MNIST, CIFAR-10, and CIFAR-100, increasing accuracy on Fashion-MNIST by two percentage points, CIFAR-10 by twelve points, and CIFAR-100 by nine points.
 
@@ -18,7 +18,7 @@ The plug-and-play architecture is visualized below.
 <p align="center">
   <img width="60%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/TeamOfSpecialists.png">
 </p>
-Each member TM first outputs its class sum per class, with the class sum signifying confidence. In the ensuing normalization step, the class sums of each TM are divided by the difference between the TM's largest and smallest class sum in the dataset.
+Each member TM first outputs its class sum per class, with the class sum signifying confidence. In the ensuing normalization step, the TM's class sums are divided by the difference between the largest and smallest class sums. The normalized class sums, in turn, are added together, forming the class sums of the team as a whole. The largest value of these decides the class output in the final step.
 
 ## Results
 
