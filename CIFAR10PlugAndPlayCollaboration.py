@@ -124,19 +124,19 @@ for epoch in range(100):
     print("#%d" % (epoch+1), end=' ')
     tm_hog.fit(X_train_hog, Y_train)
     Y_test_hog, Y_test_scores_hog = tm_hog.predict(X_test_hog, return_class_sums=True)
-    print("HoG: %.1f" % (100*(Y_test_hog == Y_test).mean()), end=' ')
+    print("HoG: %.1f%%" % (100*(Y_test_hog == Y_test).mean()), end=' ')
 
     tm_threshold.fit(X_train_threshold, Y_train)
     Y_test_threshold, Y_test_scores_threshold = tm_threshold.predict(X_test_threshold, return_class_sums=True)
-    print("Adaptive Thresholding: %.1f" % (100*(Y_test_threshold == Y_test).mean()))
+    print("Adaptive Thresholding: %.1f%%" % (100*(Y_test_threshold == Y_test).mean()), end=' ')
 
     tm_thermometer_3.fit(X_train_thermometer, Y_train)
     Y_test_thermometer_3, Y_test_scores_thermometer_3 = tm_thermometer_3.predict(X_test_thermometer, return_class_sums=True)
-    print("3x3 Color Thermometers: %.1f" % (100*(Y_test_thermometer_3 == Y_test).mean()))
+    print("3x3 Color Thermometers: %.1f%%" % (100*(Y_test_thermometer_3 == Y_test).mean()), end=' ')
 
     tm_thermometer_4.fit(X_train_thermometer, Y_train)
     Y_test_thermometer_4, Y_test_scores_thermometer_4 = tm_thermometer_4.predict(X_test_thermometer, return_class_sums=True)
-    print("4x4 Color Thermometers: %.1f" % (100*(Y_test_thermometer_4 == Y_test).mean()))
+    print("4x4 Color Thermometers: %.1f%%" % (100*(Y_test_thermometer_4 == Y_test).mean()), end=' ')
 
     ##### Team Decision #####
 
@@ -148,5 +148,5 @@ for epoch in range(100):
         votes[i] += 1.0*Y_test_scores_hog[i]/(np.max(Y_test_scores_hog) - np.min(Y_test_scores_hog))
     Y_test_team = votes.argmax(axis=1)
 
-    print("Team: %.1f" % (100*(Y_test_team == Y_test).mean()))
+    print("Team: %.1f%%" % (100*(Y_test_team == Y_test).mean()))
     print()
