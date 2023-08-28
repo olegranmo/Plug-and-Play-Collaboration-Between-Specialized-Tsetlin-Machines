@@ -2,13 +2,15 @@
 
 This project introduces plug-and-play teaming of specialized Tsetlin machines (TMs), fostering collaboration. 
 * The collaboration relies on a TM's ability to specialize during learning and to assess its competence during inference.
-* When teaming up, the most confident TMs step in and make the decisions, relieving the uncertain ones. In this manner, the team becomes more competent than its individual members, benefitting from their specializations.
+* When teaming up, the most confident TMs step in and make the decisions, relieving the uncertain ones. In this manner, the team becomes more competent than its members, benefitting from their specializations.
 * The project implements four TM specializations as a demonstration:
   * Histogram of Gradients;
   * Adaptive Thresholding w/10x10 convolution;
   * Color Thermometers w/3x3 convolution;
   * Color Thermometers w/4x4 convolution.
-* The above teaming gives the new state-of-the-art performance for TMs across the three datasets Fashion-MNIST, CIFAR-10, and CIFAR-100, increasing accuracy on Fashion-MNIST by two percentage points, CIFAR-10 by twelve points, and CIFAR-100 by nine points.
+* The members can be combined in any manner, at any time, without any form of fine-tuning, making it plug-and-play.
+
+The above teaming gives the new state-of-the-art performance for TMs across the three datasets Fashion-MNIST, CIFAR-10, and CIFAR-100, increasing accuracy on Fashion-MNIST by two percentage points, CIFAR-10 by twelve points, and CIFAR-100 by nine points.
 
 ## Architecture
 <p align="center">
