@@ -5,12 +5,11 @@
   <img width="60%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/TeamOfSpecialists.png">
 </p>
 
-## Preliminary Results
+## Results
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+<p align="center">
+  <img width="60%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/Results.png">
+</p>
 
 ## Paper
 
