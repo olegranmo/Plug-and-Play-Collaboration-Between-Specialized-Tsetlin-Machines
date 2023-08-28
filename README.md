@@ -14,7 +14,7 @@ Working as a team increases accuracy on Fashion-MNIST by two percentage points, 
 
 ## Architecture
 
-The plug-and-play architecture is visualized below.
+The plug-and-play architecture is shown below.
 <p align="center">
   <img width="60%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/TeamOfSpecialists.png">
 </p>
