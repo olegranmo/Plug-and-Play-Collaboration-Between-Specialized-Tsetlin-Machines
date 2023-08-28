@@ -1,6 +1,6 @@
 # Plug-and-Play Collaboration Between Specialized Tsetlin Machines
 
-This project introduces plug-and-play teaming of specialized Tsetlin machines (TMs), fostering collaboration. 
+This project introduces plug-and-play teaming of Tsetlin machines (TMs), fostering collaboration. 
 * The collaboration relies on a TM's ability to specialize during learning and to assess its competence during inference.
 * When teaming up, the most confident TMs step in and make the decisions, relieving the uncertain ones. In this manner, the team becomes more competent than its members, benefitting from their specializations.
 * The project implements four TM specializations as a demonstration:
