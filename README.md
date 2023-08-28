@@ -1,6 +1,6 @@
 # Plug-and-Play Collaboration Between Specialized Tsetlin Machines
 
-This project introduces plug-and-play teaming of Tsetlin machines (TMs), fostering collaboration. 
+This project introduces plug-and-play collaboration between Tsetlin machines (TMs). 
 * The collaboration relies on a TM's ability to specialize during learning and to assess its competence during inference.
 * When teaming up, the most confident TMs step in and make the decisions, relieving the uncertain ones. In this manner, the team becomes more competent than its members, benefitting from their specializations.
 * The members can be combined in any manner, at any time, without any form of fine-tuning, approaching plug-and-play.
@@ -9,8 +9,8 @@ This project introduces plug-and-play teaming of Tsetlin machines (TMs), fosteri
   * Adaptive Thresholding w/10x10 convolution;
   * Color Thermometers w/3x3 convolution;
   * Color Thermometers w/4x4 convolution.
-
-The above teaming gives the new state-of-the-art performance for TMs across Fashion-MNIST, CIFAR-10, and CIFAR-100, increasing accuracy on Fashion-MNIST by two percentage points, CIFAR-10 by twelve points, and CIFAR-100 by nine points.
+    
+Working as a team increases accuracy on Fashion-MNIST by two percentage points, CIFAR-10 by twelve points, and CIFAR-100 by nine points, yielding new state-of-the-art results for TMs across the datasets.
 
 ## Architecture
 
