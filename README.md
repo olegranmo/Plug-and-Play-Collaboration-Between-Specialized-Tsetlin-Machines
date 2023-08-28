@@ -10,7 +10,7 @@ This project introduces plug-and-play teaming of specialized Tsetlin machines (T
   * Color Thermometers w/4x4 convolution.
 * The members can be combined in any manner, at any time, without any form of fine-tuning, making the approach plug-and-play.
 
-The above teaming gives the new state-of-the-art performance for TMs across the three datasets Fashion-MNIST, CIFAR-10, and CIFAR-100, increasing accuracy on Fashion-MNIST by two percentage points, CIFAR-10 by twelve points, and CIFAR-100 by nine points.
+The above teaming gives the new state-of-the-art performance for TMs across Fashion-MNIST, CIFAR-10, and CIFAR-100, increasing accuracy on Fashion-MNIST by two percentage points, CIFAR-10 by twelve points, and CIFAR-100 by nine points.
 
 ## Architecture
 <p align="center">
