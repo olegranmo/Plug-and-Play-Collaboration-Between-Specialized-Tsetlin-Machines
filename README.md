@@ -18,9 +18,8 @@ The plug-and-play architecture is shown below.
 <p align="center">
   <img width="60%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/TeamOfSpecialists.png">
 </p>
-<p align="left">
+
 In the normal case, a TM outputs the class <img src="http://latex.codecogs.com/svg.latex?i" border="0" valign="middle"/> with the largest class sum (see [Tsetlin machine](https://github.com/cair/TsetlinMachine)):
-</p>
 
 <p align="center">
 <img src="http://latex.codecogs.com/svg.latex?\hat{y} = \mathrm{argmax}_{i}\left(\sum_{j=1}^{n/2} C_j^{i,+}(\mathbf{X}) - \sum_{j=1}^{n/2} C_j^{i,-}(\mathbf{X})\right)" border="0" valign="middle"/>.
