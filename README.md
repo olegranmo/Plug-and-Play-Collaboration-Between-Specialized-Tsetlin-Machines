@@ -52,6 +52,7 @@ Using Adaptive Thresholding on CIFAR-100 as an example, the above figure relates
 <p align="center">
   <img width="50%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/CIFAR100ThresholdingAnalysis.png">
 </p>
+We next investigate a selection of individual images at the lower and higher end of the confidence spectrum.
 
 ### Can Specialist Tsetlin Machines Successfully Collaborate?
 
