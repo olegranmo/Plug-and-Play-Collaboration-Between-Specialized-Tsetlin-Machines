@@ -45,13 +45,13 @@ The normalized class sums, in turn, are added together, forming the class sums o
   <img width="50%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/CIFAR100ThresholdingAnalysis.png">
 </p>
 
-### Is the Tsetlin machine a generalist or a specialist?
+### Is the Tsetlin Machine a Generalist or a Specialist?
 
 <p align="center">
   <img width="50%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/CIFAR100ThermometersAnalysis.png">
 </p>
 
-### Can specialist Tsetlin machines successfully collaborate?
+### Can Specialist Tsetlin Machines Successfully Collaborate?
 
 <p align="center">
   <img width="60%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/Results.png">
