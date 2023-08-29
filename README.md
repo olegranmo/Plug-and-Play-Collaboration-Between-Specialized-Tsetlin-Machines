@@ -33,7 +33,7 @@ When collaborating in a team, however, each TM team member outputs its class sum
 <img src="http://latex.codecogs.com/svg.latex?c^i_t = \sum_{j=1}^{n/2} C_{t,j}^{i,+}(X) - \sum_{j=1}^{n/2} C_{t,j}^{i,-}(X)" border="0" valign="middle"/>.
 </p>
 
-In the ensuing normalization step, the class sums of each TM are divided by the difference between the largest and smallest class sums from the data <img src="http://latex.codecogs.com/svg.latex?d \in \mathcal{D}" border="0" valign="middle"/>:
+In the ensuing normalization step, the class sums of each TM <img src="http://latex.codecogs.com/svg.latex?t" border="0" valign="middle"/> are divided by the difference between the largest and smallest class sums from the data <img src="http://latex.codecogs.com/svg.latex?d \in \mathcal{D}" border="0" valign="middle"/>:
 
 <p align="center">
 <img src="http://latex.codecogs.com/svg.latex?\mathrm{max}_{d}(c^i_{t,d}) - \mathrm{min}_{d}(c^i_{t,d})" border="0" valign="middle"/>.
