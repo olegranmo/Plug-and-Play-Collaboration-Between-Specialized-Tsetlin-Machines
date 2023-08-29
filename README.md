@@ -52,7 +52,7 @@ Using Adaptive Thresholding on CIFAR-100 as an example, the above figure relates
 <p align="center">
   <img width="50%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/CIFAR100ThresholdingAnalysis.png">
 </p>
-We next investigate a selection of individual images at the lower and higher end of the confidence spectrum.
+We next investigate a selection of individual images at the lower and higher end of the confidence spectrum. The images demonstrate that the Adaptive Thresholding TM has specialized in recognizing larger structures in the images, operating at high confidence and accuracy. For images that are mainly characterized by color texture, on the other hand, it operates with low confidence and low accuracy.
 
 ### Can Specialist Tsetlin Machines Successfully Collaborate?
 
