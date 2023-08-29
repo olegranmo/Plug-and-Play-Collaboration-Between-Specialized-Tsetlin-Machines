@@ -26,11 +26,11 @@ In the normal case, a TM, here referred to as <img src="http://latex.codecogs.co
 </p>
 
 <p align="left">
-When collaborating in a team, however, each team member outputs its class sum <img src="http://latex.codecogs.com/svg.latex?\hat{y}^{i,c}_t" border="0" valign="middle"/> per class instead, with the class sum signifying confidence:
+When collaborating in a team, however, each team member outputs its class sum <img src="http://latex.codecogs.com/svg.latex?c^i_t" border="0" valign="middle"/> per class instead, with the class sum signifying confidence:
 </p>
 
 <p align="center">
-<img src="http://latex.codecogs.com/svg.latex?\hat{y}^{i,c}_t = \sum_{j=1}^{n/2} C_{t,j}^{i,+}(X) - \sum_{j=1}^{n/2} C_{t,j}^{i,-}(X)" border="0" valign="middle"/>.
+<img src="http://latex.codecogs.com/svg.latex?c^i_t = \sum_{j=1}^{n/2} C_{t,j}^{i,+}(X) - \sum_{j=1}^{n/2} C_{t,j}^{i,-}(X)" border="0" valign="middle"/>.
 </p>
 
 In the ensuing normalization step, the TM's class sums are divided by the difference between the largest and smallest class sums: . The normalized class sums, in turn, are added together, forming the class sums of the team as a whole. The maximum value of these decides the class output in the final step.
