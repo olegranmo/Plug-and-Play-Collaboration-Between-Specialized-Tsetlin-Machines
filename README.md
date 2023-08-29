@@ -79,8 +79,8 @@ Considering accuracy epoch-by-epoch for CIFAR-10, the team performance is superi
 The plug-and-play collaboration between TMs opens several research paths ahead:
 * What other specializations (image processing techniques) can we add to the team?
 * Can we design a light optimization layer that boosts the collaboration accuracy, e.g., by weighting the specialists based on their performance?
-* Are there other ways to normalize and integrate the perspective of each Tsetlin machine?
-* Can we find a way to fine-tune the Tsetlin machine specialists to enhance collaboration further?
+* Are there other ways to normalize and integrate the perspective of each TM?
+* Can we find a way to fine-tune the TM specialists to enhance collaboration further?
 * What is the best way to organize a library of composable pre-trained Tsetlin machines?
 * How can we compose the most efficient team with a given size?
 * Does this approach extend to speech?
