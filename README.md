@@ -42,16 +42,20 @@ The normalized class sums, in turn, are added together, forming the class sums o
 ### Does the Tsetlin Machine Know When it Does Not Know?
 
 <p align="center">
-  <img width="50%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/CIFAR100ThresholdingAnalysis.png">
+  <img width="50%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/CIFAR100ThresholdingAccuracyClassSum.png">
 </p>
 
 ### Is the Tsetlin Machine a Generalist or a Specialist?
 
 <p align="center">
-  <img width="50%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/CIFAR100ThermometersAnalysis.png">
+  <img width="50%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/CIFAR100ThresholdingAnalysis.png">
 </p>
 
 ### Can Specialist Tsetlin Machines Successfully Collaborate?
+
+<p align="center">
+  <img width="50%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/CIFAR100ThermometersAnalysis.png">
+</p>
 
 <p align="center">
   <img width="60%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/Results.png">
