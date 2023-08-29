@@ -19,7 +19,7 @@ The plug-and-play architecture is shown below.
   <img width="60%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/TeamOfSpecialists.png">
 </p>
 <p align="left">
-In the normal case, a TM outputs the class with the largest confidence:
+In the normal case, a TM outputs the class with the largest class sum:
 </p>
 
 <p align="center">
