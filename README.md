@@ -36,7 +36,7 @@ When collaborating in a team, however, each TM team member outputs its class sum
 In the ensuing normalization step, the class sums of each TM <img src="http://latex.codecogs.com/svg.latex?t" border="0" valign="middle"/> are divided by the difference between the largest and smallest class sums from the data <img src="http://latex.codecogs.com/svg.latex?d \in \mathcal{D}" border="0" valign="middle"/>:
 
 <p align="center">
-<img src="http://latex.codecogs.com/svg.latex?\mathrm{max}_{d \in D}(c^i_{t,d}) - \mathrm{min}_{D}(c^i_{t,d})" border="0" valign="middle"/>.
+<img src="http://latex.codecogs.com/svg.latex?\mathrm{max}_{D}(c^i_{t,d}) - \mathrm{min}_{D}(c^i_{t,d})" border="0" valign="middle"/>.
 </p>
 
 The normalized class sums, in turn, are added together, forming the class sums of the team as a whole. The maximum value of these decides the class output in the final step.
