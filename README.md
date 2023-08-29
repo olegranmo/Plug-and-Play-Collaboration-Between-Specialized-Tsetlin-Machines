@@ -66,9 +66,13 @@ Now consider the confidence and accuracy of the Color Thermometers TM in the fig
   <img width="60%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/Results.png">
 </p>
 
+We are now ready to deploy our plug-and-play architecture for TM collaboration. The above table shows the accuracy of various team compositions for Fashion-MNIST, CIFAR-10, and CIFAR-100.
+
 <p align="center">
   <img width="50%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/CIFAR10Epochs.png">
 </p>
+
+## Further Research
 
 ## Paper
 
