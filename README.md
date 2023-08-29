@@ -31,6 +31,10 @@ As seen, each member TM first outputs its class sum <img src="http://latex.codec
 In the normal case, a TM outputs the class with the largest confidence:
 </p>
 
+<p align="center">
+<img src="http://latex.codecogs.com/svg.latex?"\hat{y} = \mathrm{argmax}_{i}\left(\sum_{j=1}^{n/2} C_j^{i,+}(\mathbf{X}) - \sum_{j=1}^{n/2} C_j^{i,-}(\mathbf{X})\right)" border="0" valign="middle"/>.
+</p>
+
 
 
 In the ensuing normalization step, the TM's class sums are divided by the difference between the largest and smallest class sums. The normalized class sums, in turn, are added together, forming the class sums of the team as a whole. The maximum value of these decides the class output in the final step.
