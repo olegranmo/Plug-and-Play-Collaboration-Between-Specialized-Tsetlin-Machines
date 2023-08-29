@@ -45,6 +45,8 @@ The normalized class sums, in turn, are added together, forming the class sums o
   <img width="50%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/CIFAR100ThresholdingAccuracyClassSum.png">
 </p>
 
+Using Adaptive Thresholding on CIFAR-100 as an example, the above figure shows how the TM accuracy increases progressively with confidence. We rank the 10000 test images of MNIST according to the class sum of the winning class for the TM.  There is a clear correspondence between the class sum
+
 ### Is the Tsetlin Machine a Generalist or a Specialist?
 
 <p align="center">
