@@ -23,7 +23,10 @@ As seen, each member TM first outputs its class sum per class, with the class su
 <p align="center">
 <img src="http://latex.codecogs.com/svg.latex?\hat{y}^{i,c} = \sum_{j=1}^{n/2} C_j^{i,+}(X) - \sum_{j=1}^{n/2} C_j^{i,-}(X)" border="0" valign="middle"/>.
 </p>
+
+<p align="left">
 In the normal case, a TM outputs the class _i_ with the largest confidence <img src="http://latex.codecogs.com/svg.latex?\hat{y}^{i,c}" border="0" valign="middle"/>.
+</p>
 
 In the ensuing normalization step, the TM's class sums are divided by the difference between the largest and smallest class sums. The normalized class sums, in turn, are added together, forming the class sums of the team as a whole. The maximum value of these decides the class output in the final step.
 
