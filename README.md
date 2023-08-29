@@ -60,7 +60,7 @@ We next investigate a selection of individual images at the lower and higher end
   <img width="50%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/CIFAR100ThermometersAnalysis.png">
 </p>
 
-Comparing the confidence and accuracy of the Color Thermometers TM in the figure above with the Adaptive Thresholding TM, notice how the images have swapped positions. The strength of one is the weakness of one, and vice versa. 
+Now consider the corresponding confidence and accuracy of the Color Thermometers TM in the figure above. Notice how it seems to specialize to get high confidence and accuracy in recognizing color texture. The weakness of the Adaptive Thresholding TM seems to the strength of the Color Thermometers TM, and vice versa. 
 
 <p align="center">
   <img width="60%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/Results.png">
