@@ -72,6 +72,8 @@ We are now ready to deploy our plug-and-play architecture for TM collaboration. 
   <img width="50%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/CIFAR10Epochs.png">
 </p>
 
+Considering accuracy epoch-by-epoch for CIFAR-100, the team performance is superior already from the first epoch and stays ahead throughout the learning process.
+
 ## Further Research
 
 ## Paper
