@@ -19,7 +19,7 @@ The plug-and-play architecture is shown below.
   <img width="60%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/TeamOfSpecialists.png">
 </p>
 <p align="left">
-In the normal case, a TM outputs the class with the largest class sum:
+In the normal case, a TM outputs the class <img src="http://latex.codecogs.com/svg.latex?i" border="0" valign="middle"/> with the largest class sum (see [Tsetlin machine](https://github.com/cair/TsetlinMachine)):
 </p>
 
 <p align="center">
@@ -27,7 +27,7 @@ In the normal case, a TM outputs the class with the largest class sum:
 </p>
 
 <p align="left">
-When collaborating, however, each TM of the team outputs its class sum <img src="http://latex.codecogs.com/svg.latex?\hat{y}^{i,c}" border="0" valign="middle"/> per class <i>i</i> instead, with the class sum signifying confidence:
+When collaborating, however, each TM outputs its class sum <img src="http://latex.codecogs.com/svg.latex?\hat{y}^{i,c}" border="0" valign="middle"/> per class instead, with the class sum signifying confidence:
 </p>
 
 <p align="center">
