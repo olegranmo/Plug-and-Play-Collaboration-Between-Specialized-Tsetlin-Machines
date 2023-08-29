@@ -45,7 +45,7 @@ The normalized class sums, in turn, are added together, forming the class sums o
   <img width="50%" src="https://github.com/olegranmo/Plug-and-Play-Collaboration-Between-Specialized-Tsetlin-Machines/blob/main/CIFAR100ThresholdingAccuracyClassSum.png">
 </p>
 
-Using Adaptive Thresholding on CIFAR-100 as an example, the above figure relates TM accuracy to its confidence. Along the x-axis, we rank the 10000 test images from CIFAR-100 from lowest to highest class sum (confidence). The y-axis shows the test accuracy for the x-axis confidence level and upwards. When confidence is low, the TM operates at low accuracy. As confidence increases, accuracy increases as well, up to 100% accuracy at the highest confidence levels.
+Using Adaptive Thresholding on CIFAR-100 as an example, the above figure relates the accuracy of the TM to its confidence. Along the x-axis, we rank the 10000 test images from CIFAR-100 from lowest to highest class sum (confidence). The y-axis shows the test accuracy for the x-axis confidence level and upwards. When confidence is low, the TM operates at low accuracy. As confidence increases, accuracy increases as well, up to 100% accuracy at the highest confidence levels.
 
 ### Is the Tsetlin Machine a Generalist or a Specialist?
 
