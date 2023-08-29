@@ -26,7 +26,7 @@ In the normal case, a TM, here referred to as <img src="http://latex.codecogs.co
 </p>
 
 <p align="left">
-When collaborating, however, each TM outputs its class sum <img src="http://latex.codecogs.com/svg.latex?\hat{y}^{i,c}_t" border="0" valign="middle"/> per class instead, with the class sum signifying confidence:
+When collaborating in a team, however, each team member outputs its class sum <img src="http://latex.codecogs.com/svg.latex?\hat{y}^{i,c}_t" border="0" valign="middle"/> per class instead, with the class sum signifying confidence:
 </p>
 
 <p align="center">
