@@ -1,6 +1,6 @@
 # TMComposite: Plug-and-Play Collaboration Between Specialized Tsetlin Machines
 
-This project introduces plug-and-play collaboration between Tsetlin machines (TMs). 
+This project introduces plug-and-play collaboration between Tsetlin machines (TMs), referred to as a TM Composite. 
 * The collaboration relies on a TM's ability to specialize during learning and to assess its competence during inference.
 * When teaming up, the most confident TMs step in and make the decisions, relieving the uncertain ones. In this manner, the team becomes more competent than its members, benefitting from their specializations.
 * The members can be combined in any manner, at any time, without any fine-tuning (plug-and-play).
