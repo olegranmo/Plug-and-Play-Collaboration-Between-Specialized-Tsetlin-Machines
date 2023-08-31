@@ -87,7 +87,7 @@ The plug-and-play collaboration between TMs opens several research paths ahead:
 
 ## Paper
 
-_Plug-and-Play Collaboration Between Specialized Tsetlin Machines_. Ole-Christoffer Granmo, 2023.
+_TMComposite: Plug-and-Play Collaboration Between Specialized Tsetlin Machines_. Ole-Christoffer Granmo, 2023.
 
 ## Licence
 
