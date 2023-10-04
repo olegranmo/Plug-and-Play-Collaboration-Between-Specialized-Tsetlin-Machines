@@ -1,6 +1,7 @@
 import numpy as np
 import keras
 from keras.datasets import imdb
+import argparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--imdb-num-words", default=5000, type=int)
