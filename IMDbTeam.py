@@ -9,6 +9,8 @@ parser.add_argument("--imdb-index-from", default=2, type=int)
 args = parser.parse_args()
 
 train, test = keras.datasets.imdb.load_data(num_words=args.imdb_num_words, index_from=args.imdb_index_from)
+train_x, train_y = train
+test_x, test_y = test
 
 Y_test = test_y.astype(np.uint32)
 
