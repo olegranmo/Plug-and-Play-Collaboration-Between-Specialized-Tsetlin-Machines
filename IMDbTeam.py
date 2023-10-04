@@ -2,6 +2,10 @@ import numpy as np
 import keras
 from keras.datasets import imdb
 
+parser = argparse.ArgumentParser()
+parser.add_argument("--imdb-num-words", default=5000, type=int)
+parser.add_argument("--imdb-index-from", default=2, type=int)
+
 train, test = keras.datasets.imdb.load_data(num_words=args.imdb_num_words, index_from=args.imdb_index_from)
 
 Y_test = test_y.astype(np.uint32)
