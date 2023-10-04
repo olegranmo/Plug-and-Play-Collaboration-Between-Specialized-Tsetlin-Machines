@@ -6,6 +6,7 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("--imdb-num-words", default=5000, type=int)
 parser.add_argument("--imdb-index-from", default=2, type=int)
+args = parser.parse_args()
 
 train, test = keras.datasets.imdb.load_data(num_words=args.imdb_num_words, index_from=args.imdb_index_from)
 
