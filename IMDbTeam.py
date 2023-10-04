@@ -1,5 +1,6 @@
 import numpy as np
 import keras
+from keras.datasets import imdb
 
 train, test = keras.datasets.imdb.load_data(num_words=args.imdb_num_words, index_from=args.imdb_index_from)
 
