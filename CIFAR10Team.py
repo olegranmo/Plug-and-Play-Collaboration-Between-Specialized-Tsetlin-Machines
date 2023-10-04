@@ -6,10 +6,10 @@ from keras.datasets import cifar10
 Y_train=Y_train.reshape(Y_train.shape[0])
 Y_test=Y_test.reshape(Y_test.shape[0])
 
-Y_test_scores_threshold = np.loadtxt("CIFAR10AdaptiveThresholding_99_2000_500_10.0_10_32_1.txt", delimiter=',')
-Y_test_scores_thermometer_3 = np.loadtxt("CIFAR10ColorThermometers_99_2000_1500_2.5_3_8_32_1.txt", delimiter=',')
-Y_test_scores_thermometer_4 = np.loadtxt("CIFAR10ColorThermometers_99_2000_1500_2.5_4_8_32_1.txt", delimiter=',')
-Y_test_scores_hog = np.loadtxt("CIFAR10HistogramOfGradients_99_2000_50_10.0_0_32_0.txt", delimiter=',')
+Y_test_scores_threshold = np.loadtxt("class_sums/CIFAR10AdaptiveThresholding_99_2000_500_10.0_10_32_1.txt", delimiter=',')
+Y_test_scores_thermometer_3 = np.loadtxt("class_sums/CIFAR10ColorThermometers_99_2000_1500_2.5_3_8_32_1.txt", delimiter=',')
+Y_test_scores_thermometer_4 = np.loadtxt("class_sums/CIFAR10ColorThermometers_99_2000_1500_2.5_4_8_32_1.txt", delimiter=',')
+Y_test_scores_hog = np.loadtxt("class_sums/CIFAR10HistogramOfGradients_99_2000_50_10.0_0_32_0.txt", delimiter=',')
 
 votes = np.zeros(Y_test_scores_threshold.shape, dtype=np.float32)
 for i in range(Y_test.shape[0]):
