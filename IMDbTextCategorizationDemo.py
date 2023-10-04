@@ -99,7 +99,8 @@ if __name__ == "__main__":
 
         benchmark2 = BenchmarkTimer(logger=_LOGGER, text="Testing Time")
         with benchmark2:
-            result = 100 * (tm.predict(X_test) == Y_test).mean()
+            Y_test_predicted, Y_test_scores = tm.predict(X_test, return_class_sums=True)
+            result = 100 * (Y_test_predicted == Y_test).mean()
 
         _LOGGER.info(f"Epoch: {epoch + 1}, Accuracy: {result:.2f}, Training Time: {benchmark1.elapsed():.2f}s, "
                      f"Testing Time: {benchmark2.elapsed():.2f}s")
