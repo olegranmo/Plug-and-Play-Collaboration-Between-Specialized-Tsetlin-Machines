@@ -104,5 +104,5 @@ if __name__ == "__main__":
         _LOGGER.info(f"Epoch: {epoch + 1}, Accuracy: {result:.2f}, Training Time: {benchmark1.elapsed():.2f}s, "
                      f"Testing Time: {benchmark2.elapsed():.2f}s")
 
-        np.savetxt("class_sums/IMDBAnalyzer_%d_%d_%d_%.2f_%d_%d_%d_%d_%s_%.2f.txt" % (epoch+1, args.num_clauses, args.T, args.s, args.min_n, args.max_n, args.max_included_literals, args.weighted_clauses, args.analyzer, args.clause_drop_p), Y_test_scores, delimiter=',') 
+        np.savetxt("class_sums/IMDBAnalyzer_%d_%d_%d_%.2f_%d_%d_%d_%d_%s_%.2f_%d.txt" % (epoch+1, args.num_clauses, args.T, args.s, args.min_n, args.max_n, args.max_included_literals, args.weighted_clauses, args.analyzer, args.clause_drop_p, args.features), Y_test_scores, delimiter=',') 
 
